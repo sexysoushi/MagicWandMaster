@@ -1,0 +1,35 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{27A76093-8785-DF46-8435-D2F6A2541D92}") = "MagicWandMaster", "Assembly-CSharp.csproj", "{2869F3AF-9B58-9124-59F3-DAAABF08D7A6}"
+EndProject
+Project("{27A76093-8785-DF46-8435-D2F6A2541D92}") = "MagicWandMaster", "Assembly-CSharp-Editor.csproj", "{AF3C47CA-2547-8AB3-E18D-1F529147BCE6}"
+EndProject
+Project("{27A76093-8785-DF46-8435-D2F6A2541D92}") = "MagicWandMaster", "Assembly-UnityScript.unityproj", "{3487FFAA-20E0-7B35-F1A3-C8EBF565BF25}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2869F3AF-9B58-9124-59F3-DAAABF08D7A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2869F3AF-9B58-9124-59F3-DAAABF08D7A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2869F3AF-9B58-9124-59F3-DAAABF08D7A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2869F3AF-9B58-9124-59F3-DAAABF08D7A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF3C47CA-2547-8AB3-E18D-1F529147BCE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF3C47CA-2547-8AB3-E18D-1F529147BCE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF3C47CA-2547-8AB3-E18D-1F529147BCE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF3C47CA-2547-8AB3-E18D-1F529147BCE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3487FFAA-20E0-7B35-F1A3-C8EBF565BF25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3487FFAA-20E0-7B35-F1A3-C8EBF565BF25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3487FFAA-20E0-7B35-F1A3-C8EBF565BF25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3487FFAA-20E0-7B35-F1A3-C8EBF565BF25}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
