@@ -69,7 +69,7 @@ public class GvrLaserPointer : GvrBasePointer {
       float scale = RETICLE_SIZE * reticleDistanceFromCamera;
       reticle.transform.localScale = new Vector3(scale, scale, scale);
     }
-
+		/*
     // Set the line renderer positions.
     lineRenderer.SetPosition(0, transform.position);
     Vector3 lineEndPoint =
@@ -81,6 +81,7 @@ public class GvrLaserPointer : GvrBasePointer {
     // Adjust transparency
     float alpha = GvrArmModel.Instance.alphaValue;
     lineRenderer.SetColors(Color.Lerp(Color.clear, laserColor, alpha), Color.clear);
+		*/
   }
 #endif  // UNITY_HAS_GOOGLEVR && (UNITY_ANDROID || UNITY_EDITOR)
 
