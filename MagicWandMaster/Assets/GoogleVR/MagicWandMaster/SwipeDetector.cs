@@ -10,13 +10,13 @@ using System.Collections.Generic;
 
 public class SwipeDetector : MonoBehaviour {
 
-	public GameObject wand_main;
-	public GameObject wand_1;
-	public GameObject wand_2;
-	public GameObject wand_3;
-	public GameObject wand_4;
-
-	private List<GameObject> wandList;
+//	public GameObject wand_main; red
+//	public GameObject wand_1; yellow
+//	public GameObject wand_2; blue 
+//	public GameObject wand_3; green
+//	public GameObject wand_4; purple
+//
+	public List<GameObject> wandList;
 	public static int currWand;
 
 	    private const int mMessageWidth  = 200;
@@ -48,13 +48,13 @@ public class SwipeDetector : MonoBehaviour {
 	    // Use this for initialization
 	    void Start () {
 
-		wandList = new List<GameObject> ();
-
-		wandList.Add (wand_main);
-		wandList.Add (wand_1);
-		wandList.Add (wand_2);
-		wandList.Add (wand_3);
-		wandList.Add (wand_4);
+//		wandList = new List<GameObject> ();
+//
+//		wandList.Add (wand_main);
+//		wandList.Add (wand_1);
+//		wandList.Add (wand_2);
+//		wandList.Add (wand_3);
+//		wandList.Add (wand_4);
 
 		foreach(GameObject w in wandList)
 		{
@@ -160,7 +160,7 @@ public class SwipeDetector : MonoBehaviour {
 		//Debug.Log ("BARBARA  taille list" + wandList.Count);
 		wandList[currWand].SetActive (false);
 		currWand = currWand + t;
-		Debug.Log ("BARBARA  before prosses" + currWand);
+		//Debug.Log ("BARBARA  before prosses" + currWand);
 		if(currWand < 0)
 		{
 			currWand = wandList.Count -1;
@@ -173,7 +173,7 @@ public class SwipeDetector : MonoBehaviour {
 		{
 			currWand = currWand;
 		}
-		Debug.Log ("BARBARA  after prosses" + currWand);
+		//Debug.Log ("BARBARA  after prosses" + currWand);
 		wandList[currWand].SetActive (true);
 
 	}

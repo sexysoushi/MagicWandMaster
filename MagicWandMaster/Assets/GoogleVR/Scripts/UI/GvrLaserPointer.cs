@@ -57,10 +57,11 @@ public class GvrLaserPointer : GvrBasePointer {
     // Set the reticle's position and scale
     if (reticle != null) {
       if (isPointerIntersecting) {
-        Vector3 difference = pointerIntersection - pointerIntersectionRay.origin;
-        Vector3 clampedDifference = Vector3.ClampMagnitude(difference, maxReticleDistance);
-        Vector3 clampedPosition = pointerIntersectionRay.origin + clampedDifference;
-        reticle.transform.position = clampedPosition;
+//        Vector3 difference = pointerIntersection - pointerIntersectionRay.origin;
+//        Vector3 clampedDifference = Vector3.ClampMagnitude(difference, maxReticleDistance);
+//        Vector3 clampedPosition = pointerIntersectionRay.origin + clampedDifference;
+//        reticle.transform.position = clampedPosition;
+				reticle.transform.localPosition = new Vector3(0, 0, maxReticleDistance);
       } else {
         reticle.transform.localPosition = new Vector3(0, 0, maxReticleDistance);
       }
