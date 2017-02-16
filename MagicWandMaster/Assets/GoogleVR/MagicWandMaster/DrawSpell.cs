@@ -26,33 +26,38 @@ public class DrawSpell : MonoBehaviour {
 	void Update () {
 		// Choose the appropriate material to render based on button states.
 		if (GvrController.ClickButton) {
-			GameObject sp;
+
 			if(SwipeDetector.currWand == 0) //red
 			{
-				sp = (GameObject)Instantiate(spell_0, reticle.transform.position, Quaternion.identity);
+				GameObject sp0 = (GameObject)Instantiate(spell_0, reticle.transform.position, Quaternion.identity);
+				spellList.Add (sp0);
 			}
 
 			if(SwipeDetector.currWand == 1) //yellow
 			{
-				sp = (GameObject)Instantiate(spell_1, reticle.transform.position, Quaternion.identity);
+				GameObject sp1 = (GameObject)Instantiate(spell_1, reticle.transform.position, Quaternion.identity);
+				spellList.Add (sp1);
 			}
 
 			if(SwipeDetector.currWand == 2) //blue
 			{
-				sp = (GameObject)Instantiate(spell_2, reticle.transform.position, Quaternion.identity);
+				GameObject sp2 = (GameObject)Instantiate(spell_2, reticle.transform.position, Quaternion.identity);
+				spellList.Add (sp2);
 			}
 
 			if(SwipeDetector.currWand == 3) //green
 			{
-				sp = (GameObject)Instantiate(spell_3, reticle.transform.position, Quaternion.identity);
+				GameObject sp3 = (GameObject)Instantiate(spell_3, reticle.transform.position, Quaternion.identity);
+				spellList.Add (sp3);
 			}
 
 			if(SwipeDetector.currWand == 4) //purple
 			{
-				sp = (GameObject)Instantiate(spell_4, reticle.transform.position, Quaternion.identity);
+				GameObject sp4 = (GameObject)Instantiate(spell_4, reticle.transform.position, Quaternion.identity);
+				spellList.Add (sp4);
 			}
 
-			spellList.Add (sp);
+
 
 
 		} else {

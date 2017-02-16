@@ -116,11 +116,17 @@ public class SwipeDetector : MonoBehaviour {
 					if (angleOfSwipe < mAngleRange) {
 						//OnSwipeRight();
 						OnSwipe (1);
+						wasTouching = false;
+						return;
 					} else if ((180.0f - angleOfSwipe) < mAngleRange) {
 						//OnSwipeLeft();
 						OnSwipe (-1);
+						wasTouching = false;
+						return;
 					} else {
 						OnSwipe (0);
+						wasTouching = false;
+						return;
 					}
 					/*
 					else {

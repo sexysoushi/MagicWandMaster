@@ -45,6 +45,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Bezier.cs" />
+     <Compile Include="Assets\BezierControlPointMode.cs" />
+     <Compile Include="Assets\BezierCurve.cs" />
+     <Compile Include="Assets\BezierSpline.cs" />
+     <Compile Include="Assets\CheckSpell.cs" />
+     <Compile Include="Assets\FairyBehavior.cs" />
+     <Compile Include="Assets\FairyMovment.cs" />
      <Compile Include="Assets\GoogleVR\Demos\Scripts\DemoInputManager.cs" />
      <Compile Include="Assets\GoogleVR\Demos\Scripts\GVRDemo\Teleport.cs" />
      <Compile Include="Assets\GoogleVR\Demos\Scripts\PermissionsDemo\PermissionsFlowManager.cs" />
@@ -96,6 +103,7 @@
      <Compile Include="Assets\GoogleVR\Legacy\Scripts\UI\GvrGaze.cs" />
      <Compile Include="Assets\GoogleVR\Legacy\Scripts\UI\GvrReticle.cs" />
      <Compile Include="Assets\GoogleVR\Legacy\Scripts\UI\IGvrGazeResponder.cs" />
+     <Compile Include="Assets\GoogleVR\MagicWandMaster\ChangeTarget.cs" />
      <Compile Include="Assets\GoogleVR\MagicWandMaster\DrawSpell.cs" />
      <Compile Include="Assets\GoogleVR\MagicWandMaster\SwipeDetector.cs" />
      <Compile Include="Assets\GoogleVR\Scripts\Audio\GvrAudio.cs" />
@@ -140,6 +148,23 @@
      <Compile Include="Assets\GoogleVR\Scripts\Utilities\GvrIntent.cs" />
      <Compile Include="Assets\GoogleVR\Scripts\Utilities\GvrUIHelpers.cs" />
      <Compile Include="Assets\GoogleVR\Scripts\Video\GvrVideoPlayerTexture.cs" />
+     <Compile Include="Assets\LRX.SteamVR.Network.Essentials\Scripts\Bullet.cs" />
+     <Compile Include="Assets\LRX.SteamVR.Network.Essentials\Scripts\CustomNetworkManager.cs" />
+     <Compile Include="Assets\LRX.SteamVR.Network.Essentials\Scripts\EnemySpawner.cs" />
+     <Compile Include="Assets\LRX.SteamVR.Network.Essentials\Scripts\GunItem.cs" />
+     <Compile Include="Assets\LRX.SteamVR.Network.Essentials\Scripts\Health.cs" />
+     <Compile Include="Assets\LRX.SteamVR.Network.Essentials\Scripts\Helper.cs" />
+     <Compile Include="Assets\LRX.SteamVR.Network.Essentials\Scripts\ITouchable.cs" />
+     <Compile Include="Assets\LRX.SteamVR.Network.Essentials\Scripts\IUsable.cs" />
+     <Compile Include="Assets\LRX.SteamVR.Network.Essentials\Scripts\InteractableObject.cs" />
+     <Compile Include="Assets\LRX.SteamVR.Network.Essentials\Scripts\MouseLook.cs" />
+     <Compile Include="Assets\LRX.SteamVR.Network.Essentials\Scripts\PlayerController.cs" />
+     <Compile Include="Assets\LRX.SteamVR.Network.Essentials\Scripts\SpawnMessage.cs" />
+     <Compile Include="Assets\Line.cs" />
+     <Compile Include="Assets\SpellsManager.cs" />
+     <Compile Include="Assets\SplineDecorator.cs" />
+     <Compile Include="Assets\SplineWalker.cs" />
+     <Compile Include="Assets\SplineWalkerMode.cs" />
      <None Include="Assets\GoogleVR\Distortion\GvrDistortion.cginc" />
      <None Include="Assets\Plugins\Android\proguard-gvr.txt" />
      <None Include="Assets\GoogleVR\Demos\Shaders\VideoDemo\VideoDemoInsideShader.shader" />
@@ -151,6 +176,7 @@
      <None Include="Assets\KY_effects\MagicEffectsPackFree\ReadMe.txt" />
      <None Include="Assets\GoogleVR\Shaders\GvrUnlitTransparentOverlay.shader" />
      <None Include="Assets\GoogleVR\Shaders\GvrUnlitTransparentOverlayColor.shader" />
+     <None Include="Assets\LRX.SteamVR.Network.Essentials\readme.txt" />
      <None Include="Assets\GoogleVR\Demos\Shaders\GVRDemo\GVRDemoAmbientOcclusion.shader" />
      <None Include="Assets\GoogleVR\Shaders\GvrUnlitTextureOverlay.shader" />
      <None Include="Assets\Plugins\Android\AndroidManifest-Daydream.xml" />
@@ -170,6 +196,10 @@
  <Reference Include="Google.ProtocolBuffers">
  <HintPath>P:/Barbara Schiavi/MagicWandMaster.git/trunk/MagicWandMaster/Assets/Plugins/Google.ProtocolBuffers.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{627C4DEA-699C-D3D1-C022-E342C2792877}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

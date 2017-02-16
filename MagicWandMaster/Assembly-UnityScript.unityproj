@@ -58,6 +58,7 @@
      <None Include="Assets\KY_effects\MagicEffectsPackFree\ReadMe.txt" />
      <None Include="Assets\GoogleVR\Shaders\GvrUnlitTransparentOverlay.shader" />
      <None Include="Assets\GoogleVR\Shaders\GvrUnlitTransparentOverlayColor.shader" />
+     <None Include="Assets\LRX.SteamVR.Network.Essentials\readme.txt" />
      <None Include="Assets\GoogleVR\Demos\Shaders\GVRDemo\GVRDemoAmbientOcclusion.shader" />
      <None Include="Assets\GoogleVR\Shaders\GvrUnlitTextureOverlay.shader" />
      <None Include="Assets\Plugins\Android\AndroidManifest-Daydream.xml" />
@@ -77,6 +78,10 @@
  <Reference Include="Google.ProtocolBuffers">
  <HintPath>P:/Barbara Schiavi/MagicWandMaster.git/trunk/MagicWandMaster/Assets/Plugins/Google.ProtocolBuffers.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{627C4DEA-699C-D3D1-C022-E342C2792877}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

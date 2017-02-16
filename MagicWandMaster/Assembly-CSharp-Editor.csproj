@@ -45,6 +45,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Editor\BezierCurveInspector.cs" />
+     <Compile Include="Assets\Editor\BezierSplineInspector.cs" />
+     <Compile Include="Assets\Editor\LineInspector.cs" />
      <Compile Include="Assets\GoogleVR\Demos\Editor\DemoInputManagerEditor.cs" />
      <Compile Include="Assets\GoogleVR\Demos\Scripts\ScrollingUIDemo\Editor\PagedScrollbarEditor.cs" />
      <Compile Include="Assets\GoogleVR\Editor\Audio\GvrAudioListenerEditor.cs" />
@@ -69,6 +72,7 @@
      <None Include="Assets\KY_effects\MagicEffectsPackFree\ReadMe.txt" />
      <None Include="Assets\GoogleVR\Shaders\GvrUnlitTransparentOverlay.shader" />
      <None Include="Assets\GoogleVR\Shaders\GvrUnlitTransparentOverlayColor.shader" />
+     <None Include="Assets\LRX.SteamVR.Network.Essentials\readme.txt" />
      <None Include="Assets\GoogleVR\Demos\Shaders\GVRDemo\GVRDemoAmbientOcclusion.shader" />
      <None Include="Assets\GoogleVR\Shaders\GvrUnlitTextureOverlay.shader" />
      <None Include="Assets\Plugins\Android\AndroidManifest-Daydream.xml" />
@@ -117,10 +121,14 @@
  </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{627C4DEA-699C-D3D1-C022-E342C2792877}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{2869F3AF-9B58-9124-59F3-DAAABF08D7A6}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-UnityScript.unityproj">
       <Project>{3487FFAA-20E0-7B35-F1A3-C8EBF565BF25}</Project>      <Name>Assembly-UnityScript</Name>    </ProjectReference>
+    <ProjectReference Include="Assembly-CSharp-Editor-firstpass.csproj">
+      <Project>{9B11E1B0-9058-33DD-32FB-09727A8283C8}</Project>      <Name>Assembly-CSharp-Editor-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
