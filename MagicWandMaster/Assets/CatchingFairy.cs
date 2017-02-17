@@ -16,12 +16,13 @@ public class CatchingFairy : MonoBehaviour {
 	{
 		proj = (GameObject)Instantiate (projectil, projectil.transform.position, Quaternion.identity);
 		proj.AddComponent<Rigidbody> ();
-	}
+		proj.GetComponent<Rigidbody> ().useGravity = false;
+
 
 	void ThrowProjectil()
 	{
 		Vector3 direction = reticle.transform.position - this.transform.position;
-		proj.GetComponent<Rigidbody> ().AddForce (direction);
+			proj.GetComponent<Rigidbody> ().AddForce (direction, ForceMode.Impulse);
 	}
 	
 	// Update is called once per frame
